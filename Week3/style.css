@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* font-family: 'Playfair Display', serif; */
+* {
+    padding: 0;
+    margin: 0;
+    background-color:rgb(34, 34, 34);
+}
+
+.other_links, .more_recipes, .about, .quick_facts, .ingredients, .directions, .things, .directions_list {
+    font-family: playfair display;
+    color: white;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    line-height: 50px;
+    color:whitesmoke;
+    border-bottom: 5px solid white;
+    font-family: fantasy;
+    text-decoration: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+.other_links {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    z-index: 100;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    word-spacing: 30px;
+    border-right: 3px solid white;
+    border-right-width: 5%;
+}
+
+.about{
+    position: absolute;
+    top: 3%;
+    left: 16%;
+    z-index: 200;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border-left: 3px solid white;
+}
+
+:hover.other_links, :hover.more_recipes, :hover.about {
+    text-decoration:cadetblue underline 2.5px;
+}
+
+.more_recipes {
+    position: absolute;
+    top: 3%;
+    left: 9%;
+    z-index: 100;
+    color: white;
+    text-align: left;
+    padding: 10px;}
+
+.quick_facts {
+    text-align: center;
+    width: 12%;
+    height:10%;
+    position: absolute;
+    z-index: 100;
+    top: 16%;
+    right: 45%;
+    vertical-align: middle;
+    line-height: 50px;
+
+}
+.facts {
+    font-family: fantasy;
+}
+
+.chicken{
+    height: 50%;
+    width: 40%;
+    position: relative;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.ingredients {
+    text-align: left;
+    top: 16.5%;
+    position: absolute;
+    width: 40%;
+    color:whitesmoke;
+    line-height: 30px;
+    left: 65%;
+    font-family: fantasy;
+    z-index: 200;
+}
+
+.directions{
+width: 45%;
+left: 45%;
+top: 65%;
+position: absolute;
+overflow-wrap: break-word;
+font-family: fantasy;
+line-height: 60px;
+z-index: 100;
+}
+.things{
+    line-height: 30px;
+    list-style: none;
+}
+
+
+.caption{
+    color:white;
+    width: 18%;
+    font-family: fantasy;
+}
+
+.chicken_paragraph{
+    color:white;
+    font-style: oblique;
+    float: left;
+    width: 40%;
+    line-height: 60px;
+    top: 90%;
+    position: absolute;
+
+
+}
