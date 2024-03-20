@@ -1,0 +1,169 @@
+*{
+    text-decoration: none;
+    color: inherit;
+    font-family: "Ojuju";
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+}
+
+a{
+    padding: 5px 5px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+p{
+    position: relative;
+    top: 135px;
+    word-wrap:normal
+}
+
+.background-image {
+    background-image: url('./about_images/Put\ on\ New\ Website\ -40\ copy.jpg'); /* Replace 'background-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust the height of the background image section */
+    position: relative;
+}
+
+.recent-work{
+    color: white;
+    position: relative;
+}
+
+.solid-background {
+    background-color:black; /* Set the color of the solid background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff; /* Text color for the content */
+}
+
+.content{
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-row img {
+    width: 250px; /* Adjust the size of the images as needed */
+    height: auto;
+    margin: 0 10px; /* Adjust the spacing between images as needed */
+}
+
+.image-row img:hover {
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+  /* Modal Content */
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    bottom: 5%;
+    left: 20%;
+    width: 100%;
+    max-width: 1200px;
+}
+
+  /* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-image {
+    display: none;
+    width: 50%;
+}
+
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header a {
+        background-color: black;
+    }
+
+
+    .image-row {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images vertically */
+    }
+
+    .image-row img {
+        margin: 10px 0; /* Add margin to top and bottom for spacing */
+    }
+
+}
+
+/* Hover effect for touch devices */
+@media (hover: hover) and (pointer: fine) {
+    /* Apply the same hover effect as above */
+    .gallery img:hover {
+        border: 3px solid white;
+    }
+}
+
+/* Larger font size for desktop */
+@media screen and (min-width: 769px) {
+    .content p {
+        position: relative;
+        top: 125px;
+        font-size: 20px;
+    }
+}
