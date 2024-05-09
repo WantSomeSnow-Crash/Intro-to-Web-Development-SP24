@@ -1,4 +1,7 @@
 # Final Info:
+
+* also main_page_java.js from last month is the intro to js basic code that I presented in class on 4/9. Sorry I know it's kinda confusing. 
+
 * link to presentation [https://docs.google.com/presentation/d/1XWZ5z7r51UYgQP3s3ouK49xSWFLxnHYNyhzsf7z0LWg/edit?usp=sharing](url)
 
 <h3>Continuing to Add:</h3> 
