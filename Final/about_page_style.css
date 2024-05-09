@@ -1,0 +1,61 @@
+* {
+    font-family: 'feneon','Courier New', Courier, monospace;
+}
+
+body{
+    background: url('./contact_image/contact_background.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5); /* White background with 80% opacity */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.navbar-brand  {
+    color: black !important; /* Replace #yourColorHere with your desired color */
+}
+
+.navbar-brand:hover {
+    color: grey !important; /* Replace #yourColorHere with your desired color */
+}
+    .nav-link{
+    color: black !important; /* Replace #yourColorHere with your desired color */
+}
+
+.nav-link:hover {
+    color: gray !important; /* Replace #yourColorHere with your desired color */
+}
+
+.navbar {
+    background-color: transparent !important;
+    color: black !important;
+}
+.form-control {
+    background-color: rgba(255, 255, 255, 0.5) !important; /* 50% opacity */
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.btn-primary {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+}
+
+.navbar-light .navbar-toggler-icon {
+    color: black;
+}

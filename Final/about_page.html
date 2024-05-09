@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xuq6xes.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="about_page_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">DYLAN SACHS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about_page.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./full_portfolio_page.html">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact_page.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Little Intro</h1>
+            <p>Hey I'm DYLAN I am a former PHOTOGRAPHER turned DESIGNER from Jersey and below is some of my recent work.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./about_images/Bassem Youssef08 copy.jpeg" alt="Image 1" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="./about_images/DSC00458 copy 2.jpg" alt="Image 2" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="./about_images/DSC05550 copy.jpg" alt="Image 3" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+    // Select the h1 and p elements
+    var h1 = document.querySelector('h1');
+    var p = document.querySelector('p');
+
+    // Create the animation for the h1 element
+    gsap.from(h1, {
+        duration: 1, // Duration of 1 second
+        x: -200, // Start from 200px to the left
+        autoAlpha: 0, // Start from fully transparent
+        rotation: 0.01, // Add a slight rotation
+        ease: "power2.out" // Use a smooth easing function
+    });
+
+    // Create the animation for the p element, delayed by 0.5 seconds
+    gsap.from(p, {
+        duration: 1, // Duration of 1 second
+        delay: 0.5, // Delay of 0.5 seconds
+        x: -200, // Start from 200px to the left
+        autoAlpha: 0, // Start from fully transparent
+        rotation: 0.01, // Add a slight rotation
+        ease: "power2.out" // Use a smooth easing function
+    });
+}
+    </script>
+</body>
+</html>

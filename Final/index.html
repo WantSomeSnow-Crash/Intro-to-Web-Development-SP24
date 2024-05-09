@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xuq6xes.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="main_page_java.js"></script>
+    <style>
+        #loading-screen {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+            animation: pulse 2s infinite;
+            z-index: 9999;
+        }
+
+        @keyframes pulse {
+            0% { color: white; }
+            50% { color: black; }
+            100% { color: white; }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        .img-fluid {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading-screen">DYLAN SACHS</div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html">DYLAN SACHS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about_page.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./full_portfolio_page.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact_page.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <img src="/img/Put on New Website -50 copy.jpg" alt="Desktop Image" class="img-fluid desktop-image">
+        <img src="./people_images/Put on New Website -35 copy.jpg" alt="Mobile Image" class="img-fluid mobile-image">
+        <div class="overlay">
+            <div class="text-overlay">DYLAN SACHS</div>
+            <div class="buttons">
+                <a href="./full_portfolio_page.html" target="_self"><button class="btn btn-primary">My Work</button></a>
+                <a href="./contact_page.html" target="_self"><button class="btn btn-primary">Contact Me</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('#loading-screen').fadeOut('slow');
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
