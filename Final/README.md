@@ -34,11 +34,15 @@ Also shows and hides the images when user filters images
       });
 
 What Went Wrong:
-* Tried to add some games I made to the site but doing do created havic to the site. Had to take and leave out since I haven't been able to figure it out. * Would sometime cause elements of the game to be visable even when filtered out.
+* Tried to add some games I made to the site but doing do created havic to the site. Had to take and leave out since I haven't been able to figure it out.
+
+* Would sometime cause elements of the game to be visable even when filtered out.
 
       <div id="game1" class=col-12 col-sm-6 col-md-4 col-lg-3 filter Games">
           </div>
           <script src="./js_games/Second Rewritten Code.js"></script?
 
 Future Plans:
-* I would like to be able to add the games portion to my site and continue to make it more interactive and have a less of a boring portfolio site. * I think if I have time over the summer I will add to it and hopfully swap it out with my squarespace website to save myself some money
+* I would like to be able to add the games portion to my site and continue to make it more interactive and have a less of a boring portfolio site.
+
+* I think if I have time over the summer I will add to it and hopfully swap it out with my squarespace website to save myself some money
